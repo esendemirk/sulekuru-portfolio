@@ -108,7 +108,7 @@
             font-size: clamp(1rem, 2vw, 1.15rem);
             color: var(--metallic);
             line-height: 1.8;
-            margin-bottom: 50px;
+            margin-bottom: 40px;
             max-width: 650px;
             margin-left: auto;
             margin-right: auto;
@@ -194,13 +194,45 @@
             }
 
             .cta-buttons {
-                flex-direction: column;
-                width: 100%;
+                gap: 15px;
             }
 
             .btn {
-                width: 100%;
-                justify-content: center;
+                padding: 14px 30px;
+                font-size: 0.9rem;
+            }
+        }
+
+        @media (max-width: 400px) {
+            .profile-photo {
+                width: 140px;
+                height: 140px;
+                margin-bottom: 25px;
+            }
+
+            .name {
+                font-size: 2.2rem;
+                margin-bottom: 15px;
+            }
+
+            .title {
+                font-size: 1.1rem;
+                margin-bottom: 25px;
+            }
+
+            .summary {
+                margin-bottom: 30px;
+            }
+
+            .btn {
+                padding: 12px 24px;
+                font-size: 0.85rem;
+                gap: 8px;
+            }
+
+            .btn svg {
+                width: 16px;
+                height: 16px;
             }
         }
     </style>
@@ -215,11 +247,11 @@
         <h1 class="name">Şule Kuru</h1>
         <div class="title">Aerospace Engineer</div>
         <p class="summary">
-            Line Maintenance Engineer at Turkish Technic with 8+ years of experience in aircraft operations, troubleshooting, and technical coordination across Airbus and Boeing fleets.
+            Line Maintenance Engineer at Turkish Technic with 8+ years of experience across Airbus and Boeing fleets.
         </p>
 
         <div class="cta-buttons">
-            <a href="mailto:suleekuru@gmail.com" class="btn btn-primary">
+            <a href="/cdn-cgi/l/email-protection#394a4c555c5c524c4b4c795e54585055175a5654" class="btn btn-primary">
                 <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M0 3v18h24v-18h-24zm6.623 7.929l-4.623 5.712v-9.458l4.623 3.746zm-4.141-5.929h19.035l-9.517 7.713-9.518-7.713zm5.694 7.188l3.824 3.099 3.83-3.104 5.612 6.817h-18.779l5.513-6.812zm9.208-1.264l4.616-3.741v9.348l-4.616-5.607z"/>
                 </svg>
@@ -231,7 +263,3 @@
                 </svg>
                 LinkedIn
             </a>
-        </div>
-    </div>
-</body>
-</html>
