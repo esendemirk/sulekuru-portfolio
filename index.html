@@ -87,7 +87,7 @@
 
         .name {
             font-family: 'Cormorant Garamond', serif;
-            font-size: clamp(3rem, 8vw, 5rem);
+            font-size: clamp(2.5rem, 7vw, 4.5rem);
             font-weight: 300;
             line-height: 1.1;
             margin-bottom: 20px;
@@ -96,7 +96,7 @@
         }
 
         .title {
-            font-size: clamp(1.2rem, 3vw, 1.6rem);
+            font-size: clamp(1.1rem, 2.5vw, 1.4rem);
             color: var(--sky-blue);
             margin-bottom: 30px;
             font-weight: 300;
@@ -105,7 +105,7 @@
         }
 
         .summary {
-            font-size: clamp(1rem, 2vw, 1.15rem);
+            font-size: clamp(0.95rem, 1.8vw, 1.05rem);
             color: var(--metallic);
             line-height: 1.8;
             margin-bottom: 40px;
@@ -124,10 +124,10 @@
         }
 
         .btn {
-            padding: 16px 40px;
+            padding: 14px 35px;
             border: none;
             border-radius: 6px;
-            font-size: 1rem;
+            font-size: 0.9rem;
             font-weight: 400;
             letter-spacing: 1px;
             cursor: pointer;
@@ -178,6 +178,29 @@
             }
         }
 
+        .footer {
+            position: fixed;
+            bottom: 20px;
+            left: 0;
+            right: 0;
+            text-align: center;
+            font-size: 0.85rem;
+            color: var(--metallic);
+            opacity: 0.7;
+            z-index: 10;
+            animation: fadeIn 1.5s ease-out 1.2s both;
+        }
+
+        .footer a {
+            color: var(--sky-blue);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer a:hover {
+            color: var(--pearl);
+        }
+
         @media (max-width: 640px) {
             .container {
                 padding: 30px 20px;
@@ -190,7 +213,7 @@
             }
 
             .name {
-                font-size: 2.5rem;
+                font-size: 2.2rem;
             }
 
             .cta-buttons {
@@ -198,8 +221,8 @@
             }
 
             .btn {
-                padding: 14px 30px;
-                font-size: 0.9rem;
+                padding: 12px 26px;
+                font-size: 0.85rem;
             }
         }
 
@@ -211,12 +234,12 @@
             }
 
             .name {
-                font-size: 2.2rem;
+                font-size: 2rem;
                 margin-bottom: 15px;
             }
 
             .title {
-                font-size: 1.1rem;
+                font-size: 1rem;
                 margin-bottom: 25px;
             }
 
@@ -251,7 +274,7 @@
         </p>
 
         <div class="cta-buttons">
-            <a href="/cdn-cgi/l/email-protection#394a4c555c5c524c4b4c795e54585055175a5654" class="btn btn-primary">
+            <a href="mailto:suleekuru@gmail.com" class="btn btn-primary">
                 <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M0 3v18h24v-18h-24zm6.623 7.929l-4.623 5.712v-9.458l4.623 3.746zm-4.141-5.929h19.035l-9.517 7.713-9.518-7.713zm5.694 7.188l3.824 3.099 3.83-3.104 5.612 6.817h-18.779l5.513-6.812zm9.208-1.264l4.616-3.741v9.348l-4.616-5.607z"/>
                 </svg>
@@ -263,3 +286,11 @@
                 </svg>
                 LinkedIn
             </a>
+        </div>
+    </div>
+
+    <div class="footer">
+        Designed + built by <a href="https://www.kaanesendemir.com" target="_blank">Kaan</a>
+    </div>
+</body>
+</html>
